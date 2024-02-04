@@ -34,7 +34,7 @@ function App() {
           maxLength={12}
           onChange={(e) => {
             setWord(e.target.value)
-            setIsEmpty(e.target.value === '') 
+            setIsEmpty(e.target.value.trim() === '') 
           }}
           value={word}
         />
